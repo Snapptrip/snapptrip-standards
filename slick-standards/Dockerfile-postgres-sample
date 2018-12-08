@@ -1,0 +1,7 @@
+# postgres-10 image + postgis-2.5 extension
+FROM mdillon/postgis:10-alpine
+
+# add plpython2 extension
+RUN apk add --no-cache postgresql-plpython2 && \
+    mv /usr/share/postgresql/extension/plpython* /usr/local/share/postgresql/extension/ && \
+    mv /usr/lib/postgresql/plpython2.so /usr/local/lib/postgresql/
