@@ -6,7 +6,12 @@ lazy val slickProject =
   project
     .in(file("slick-standards"))
 
+lazy val monadProject =
+  project
+    .in(file("monad-standards"))
+
 lazy val root =
   project
     .in(file("."))
     .dependsOn(slickProject)
+    .dependsOn(monadProject)

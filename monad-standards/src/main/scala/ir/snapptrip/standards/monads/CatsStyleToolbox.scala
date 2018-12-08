@@ -7,7 +7,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 import scala.language.implicitConversions
 
-object EitherTFutureStrategy extends CommonValidation {
+object CatsStyleToolbox extends CommonValidation {
 
   type Error = String
 
