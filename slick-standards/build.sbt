@@ -2,6 +2,10 @@ name := "slick-standards"
 version := "0.1"
 scalaVersion := "2.12.7"
 
+// BIG CASE-CLASS MAPPING
+libraryDependencies += "com.chuusai" %% "shapeless" % "2.3.3"
+libraryDependencies += "io.underscore" %% "slickless" % "0.3.3"
+
 // DATABASE
 libraryDependencies += "org.postgresql" % "postgresql" % "42.2.5"
 libraryDependencies += "com.typesafe.slick" %% "slick" % "3.2.3"
